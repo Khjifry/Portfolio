@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  background-color: #804fb1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+  padding: 0 30px;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar a i {
+  color: #ffffff;
+  font-size: 50px;
+}
+.navbar a:hover {
+  transform: scale(1.1);
+}
+.navbar a:active {
+  transform: scale(1);
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.navbar ul li {
+  padding: 10px;
+}
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font: normal normal 600 15px / normal "Poppins", monospace;
+  display: block;
+}
+.navbar ul li:hover a {
+  transform: scale(1.1);
+}
+.navbar ul li:active a {
+  transform: scale(1);
+}
+.navbar .toggle, .navbar .close{
+  display: none;
+}
+#home {
+  background-image: url(./images/background.webp);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 71px;
+}
+#home .screen {
+  width: 350px;
+  height: 200px;
+  border: 10px solid #804fb1;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+#home .screen h1 {
+  font: italic normal 700 37px/70px "Pacifico", sans-serif;
+  color: #4d0099;
+}
+#home .screen p {
+  font: italic normal 400 17px / normal "Righteous", monospace;
+  color: #4d0099;
+}
+#home .stander {
+  width: 30px;
+  height: 60px;
+  background-color: #804fb1;
+}
+#home .base {
+  width: 150px;
+  height: 30px;
+  background-color: #804fb1;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  margin-top: -15px;
+}
+
+#about {
+  display: flex;
+}
+#about .left-side,
+.right-side {
+  padding: 70px 50px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#about .left-side article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about .left-side article header {
+  font: normal normal 700 37px / normal "Righteous", sans-serif;
+  color: #4d0099;
+  margin-bottom: 15px;
+}
+#about .left-side article p {
+  font: normal normal 300 17px / normal "Poppins", sans-serif;
+  color: #4d0099;
+  text-align: justify;
+  margin-top: 15px;
+}
+#about .left-side hr {
+  margin: 30px auto;
+  width: calc(100% - 50px);
+  height: 3px;
+  background-color: #4d0099;
+}
+#about .left-side ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+#about .left-side ul li {
+  padding: 10px;
+  background-color: #4d0099;
+}
+#about .left-side ul li a i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#about .right-side .profile {
+  width: 70%;
+  aspect-ratio: 1 / 1;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  border-top: 5px solid #4d0099;
+}
+#projects h2 {
+  font: normal normal 700 37px / normal "Righteous", sans-serif;
+  color: #4d0099;
+}
+#projects .projects-items {
+  margin: 5vh 0;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.projects-items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+.projects-items .item img {
+  width: 70%;
+  height: 400px;
+  object-fit: fill;
+  padding: 10px;
+}
+.projects-items .item a button {
+  padding: 12px 17px;
+  font: normal normal bolder 23px / normal "Poor Story", sans-serif;
+  letter-spacing: 3px;
+  background-color: #4d0099;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.projects-items .item a button:hover{
+  transform: scale(1.05);
+}
+.projects-items .item a button:active{
+  transform: scale(1);
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid #4d0099;
+  padding: 5vh 0;
+}
+#contact h2 {
+  font: normal normal 700 37px / normal "Righteous", sans-serif;
+  color: #4d0099;
+}
+#contact form {
+  margin-top: 5vh;
+}
+#contact form div {
+  width: 50vw;
+  height: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #804fb1;
+}
+#contact form div input {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font: normal normal bolder 20px / normal "Poor Story", sans-serif;
+  color: #804fb1;
+}
+#contact form div input::placeholder {
+  color: #804fb1;
+}
+#contact form div textarea {
+  width: 100%;
+  height: 30vh;
+  resize: none;
+  outline: none;
+  font: normal normal bolder 20px / normal "Poor Story", sans-serif;
+  color: #804fb1;
+}
+#contact form div textarea::placeholder {
+  color: #804fb1;
+}
+#contact form button {
+  font: normal normal bolder 23px / normal "Poor Story", sans-serif;
+  letter-spacing: 3px;
+  padding: 10px 15px;
+  background-color: #4d0099;
+  color: #ffffff;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  #about {
+    flex-direction: column-reverse;
+  }
+  #about .left-side,
+  .right-side {
+    width: 100%;
+  }
+  #projects .projects-items {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #projects .projects-items .item {
+    width: 100%;
+  }
+  #projects .projects-items .line {
+    width: 100%;
+    height: 1px;
+    background-color: #804fb1;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar .toggle{
+    display: block;
+  }
+  .navbar .toggle, .close {
+    color: #ffffff;
+    font-size: 50px;
+  }
+  .navbar i:hover {
+    transform: scale(1.1);
+  }
+  .navbar i:active {
+    transform: scale(1);
+  }
+  .navbar .toggle.active {
+    display: none;
+  }
+  .navbar .close.active {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding-right: 30px;
+    height: 70px;
+  }
+  .navbar ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #804fb1;
+    width: 100%;
+    height: 100vh;
+  }
+  .navbar:has(ul.active){
+    padding: 0;
+    align-items: unset;
+  }
+  #projects .projects-items .item img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #home .screen {
+    width: 300px;
+  }
+  #home .screen h1 {
+    font-size: 30px;
+  }
+}

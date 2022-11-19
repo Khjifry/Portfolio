@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poor+Story&family=Poppins&family=Righteous&family=Russo+One&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Khadijah Aljufri's Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home" aria-label="Home"><i class="fa fa-home"></i></a>
+      <ul>
+        <li><a href="#about" aria-label="About">About</a></li>
+        <li><a href="#projects" aria-label="Projects">Projects</a></li>
+        <li><a href="#contact" aria-label="Contact">Contact</a></li>
+      </ul>
+      <i class="fa fa-bars toggle"></i>
+      <i class="fa fa-close close"></i>
+    </nav>
+    <main id="home">
+      <div class="screen">
+        <h1>Khadijah Aljufri</h1>
+        <p>a web developer</p>
+      </div>
+      <div class="stander"></div>
+      <div class="base"></div>
+    </main>
+    <section id="about">
+      <div class="left-side">
+        <article>
+          <header>About Me</header>
+          <p>
+            Hi I am Khadijah Aljufri a 14 years old girl from Indonesia, a web
+            developer. My skills are : HTML, CSS, and JavaScript. Also I am
+            searching for new opportunity which may can improve my skills and my
+            experience. I was learning at some online schools like w3schools,
+            mdn, etc. That is not really important to graduate at a university
+            because that maybe will be not meaning if you don't practice your
+            skills, so that I also practice my skills by making projects,
+            teaching it, or also explaining something and post it on media
+            social. Just that for telling about me, if you not yet interested at
+            me just go to my github and see my projects which may can make you
+            interested, otherwise if you already interested at me don't hestiate
+            to contact me.
+          </p>
+        </article>
+        <hr />
+        <ul>
+          <li>
+            <a href="#" aria-label="Github Account"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram Account"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Medium Account"><i class="fa fa-medium"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn Account"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter Account"><i class="fa fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <img
+          src="images/irene-kredenets-HksMtKpCuoI-unsplash.webp"
+          alt="image-can't-load"
+          class="profile"
+        />
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-items">
+        <div class="item">
+          <img src="./images/WhatsappClone.webp" alt="image-can't-load" />
+          <a href="https://khjifry.github.io/WebWhatsappClone/" target="_blank"
+          aria-label="Demo Whatsapp Clone"><button>Demo</button></a
+          >
+        </div>
+        <hr class="line" />
+        <div class="item">
+          <img src="./images/Calculator.webp" alt="image-can't-load" />
+          <a href="https://khjifry.github.io/Calculator/" target="_blank"
+          aria-label="Demo Calculator"><button>Demo</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/mnqrglev" method="post">
+        <div>
+          <input type="text" name="Username" placeholder="Username..." />
+        </div>
+        <div><input type="email" name="Email" placeholder="Email..." /></div>
+        <div>
+          <textarea
+            name="Massage"
+            cols="30"
+            rows="10"
+            placeholder="Massage"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
